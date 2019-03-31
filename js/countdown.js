@@ -16,3 +16,6 @@ function countDown(time) {
 
     },1000);
 }
+
+//
+countDown(61);
