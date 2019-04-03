@@ -3,21 +3,21 @@ var car = {
     name: 'BMW', //Property
     year: 2010, //property
     madeIn: 'USA', //property
-    parts : {
+    parts: {
         name: "Engine",
         type: "solid",
-        condition:"ok",
+        condition: "ok",
         renewed: true,
-        priceDetail: function() {
+        priceDetail: function () {
             console.log("engine detail");
         }
     },
-    getDetail: function() {
+    getDetail: function () {
         //this = car
-        console.count(this.name+ "was made in" + this.madeIn + "in" + this.year);
-    },//method
+        console.count(this.name + "was made in" + this.madeIn + "in" + this.year);
+    }, //method
 
-    getMadeIn: function() {
+    getMadeIn: function () {
         return this.madeIn;
         //var madeIn = car getMadeIn()
     }
@@ -32,7 +32,7 @@ console.log(car.name, car.year, car.getDetail());
 console.log(car.name, car.parts);
 car.name = "Ramesh";
 
-car['name']= "Ram";
+car['name'] = "Ram";
 
 car['build'] = 'Meta';
 
@@ -43,19 +43,18 @@ console.log(car.newProperty);
 
 
 var anotherCar = {
-       name: "Toyota",
-       yera:2010,
-        parts: [   
-            {
-                name: "Engine",
-                serviced: true
-            },
-            {
-                name: "clutch",
-                serviced: false
-            }
+    name: "Toyota",
+    yera: 2010,
+    parts: [{
+            name: "Engine",
+            serviced: true
+        },
+        {
+            name: "clutch",
+            serviced: false
+        }
     ],
-    printDetail:function(){
+    printDetail: function () {
         console.log(this.name)
     }
 }

@@ -2,7 +2,7 @@ function countDown(time) {
     //calculate minutes
     var min = Math.floor(time/60);
     //calculate second
-    var sec = time+(min*60);
+    var sec = time-(min*60);
 
     //time out with 1 second delay
 
@@ -18,4 +18,4 @@ function countDown(time) {
 }
 
 //
-countDown(61);
+countDown(62);
