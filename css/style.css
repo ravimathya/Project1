@@ -5,7 +5,19 @@ body {
 	height: 100%;
 
 }
+.active {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline;
 
+}
+
+.normal {
+	color: inherit;
+	font-weight: bolder;
+	text-decoration: none;
+	
+}
 ::selection {
 	/* color: red; */
 	user-select: none;
