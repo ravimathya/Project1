@@ -47,7 +47,7 @@ students.forEach(function(student ,index) {
 }); */
 
 
-
+/* //using long form by using innerText
 var studentTableBody = document.querySelector("#student-table");
 students.forEach(function(student ,index) {
     var tableTr = document.createElement("tr");
@@ -65,4 +65,20 @@ students.forEach(function(student ,index) {
     tableTr.appendChild(tableTd4);
     studentTableBody.appendChild(tableTr);
 
+}) */
+
+/* var forInnerHTML = document.querySelector("#forInnerHTML");
+forInnerHTML.innerHTML = "<h3> This is inserted HTML</h3> <p> This is inserted HTML paragraph</p>";
+ */
+students.forEach(function(student, index) {
+    //creating li for each student
+    //let listEl = doument.createElement("li");
+
+    studentTable.innerHTML = `
+    <tr>
+    <td>${index+1}</td>
+    <td>${student.name}</td>
+    <td>${student.college}</td>
+    <td>${student.dob}</td>
+    </tr>`
 })
