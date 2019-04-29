@@ -1,0 +1,26 @@
+.Container {
+    padding: 20px;
+}
+
+.image {
+    width: 80px;
+    height: 40px;
+}
+.carousel_imgae {
+    background-size: cover;
+}
+
+/* .carousel_height {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+} */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav_margin {
+    margin: 20px;
+    border-radius: 10px;
+}
